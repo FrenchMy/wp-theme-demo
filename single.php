@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-
-<h2>Article</h2>
     
     <?php if(have_posts( )) : ?>
 
