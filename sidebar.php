@@ -1,7 +1,5 @@
 <article>
 
-    <h3>Complément</h3>
-
     <div class="widget-container">
 
         <?php if (is_active_sidebar( 'widget-1' )) {

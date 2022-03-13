@@ -1,40 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Merriweather+Sans&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oxygen:wght@300;400&display=swap');
 :root {
     /*Polices*/
-    --police-principale: "Lato";
-    --police-titres: "Merriweather Sans";
-
+    --police-principale: 'Oxygen';
+    --police-titres: 'Kaushan Script';
     /*Palette de couleurs*/
-    --clr-principale: #212e53;
-    --clr-accent: #bed3c3;
-    --clr-sombre: #111;
-    --clr-claire: #efefef;
-
+    --clr-principale: #444;
+    --clr-accent: #ff0000;
+    --clr-sombre: #222;
+    --clr-claire: #eee;
     /*Mesures*/
     --largeur-contenus: 85%;
 }
 
+
 /* Reset */
 
-*,
-*::before,
-*::after {
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
 
 /* Base */
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: var(--police-principale);
     min-height: 100vh;
 }
@@ -68,6 +58,7 @@ a {
     display: flex;
     align-items: center;
 }
+
 
 /* Grille */
 
@@ -115,6 +106,8 @@ h1 a {
     color: #222;
     text-decoration: none;
 }
+
+
 /* Menus */
 
 .menu {
@@ -145,6 +138,7 @@ h1 a {
     font-weight: normal;
 }
 
+
 /* Contenus */
 
 .quart img {
@@ -164,12 +158,12 @@ h1 a {
 }
 
 .widget-container {
-    height: 300px;
+    height: 400px;
     margin-top: 20px;
 }
 
 footer {
-    height: 120px;
+    height: 100px;
     border-top: 1px solid #ccc;
     margin-top: auto;
     text-align: right;
@@ -179,40 +173,31 @@ footer {
     .flex {
         justify-content: center;
     }
-
     header,
     footer {
         text-align: center;
     }
-
     .conteneur {
         width: 95%;
     }
-
     .flex {
         flex-wrap: wrap;
     }
-
     .quart {
         flex-basis: 100%;
     }
-
     .quart img {
         margin-top: 0;
     }
-
     .demi {
         flex-basis: 100%;
     }
-
     .trois-quart {
         flex-basis: 100%;
     }
-
     article {
         margin-bottom: 100px;
     }
-
     .sidebar {
         margin-left: 0;
     }

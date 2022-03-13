@@ -5,6 +5,7 @@
     <meta charset="<?php bloginfo( 'charset' ) ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title><?php bloginfo( 'title' ); ?></title>
 
 <!-- Action hook : Placeholder pour le code de wordpress -->
@@ -35,11 +36,17 @@
             ?>
 
                 <!-- <ul class="menu">
-                    <li><a href="#" class="btn">Accueil</a></li>
                     <li><a href="#" class="btn">À propos</a></li>
+                    <li><a href="#" class="btn">Acheter</a></li>
+                    <li><a href="#" class="btn">Vendre</a></li>
                     <li><a href="#" class="btn">Contact</a></li>
                 </ul> -->
             </nav>
+            <div class="reseaux">
+                <div class="facebook"><a href="https://www.facebook.com/victorandrea.perego.5"><i class="fa-brands fa-facebook-square"></i></a></div>
+                <div class="phone"><a href="tel:1418-429-8746"><i class="fa-solid fa-square-phone"></i> 418 429-8746</a></div>
+                <div class="mail"><a href="mailto:va.perego@gmail.com"><i class="fa-solid fa-envelope"></i> va.perego@gmail.com</a></div>
+            </div>
         </div>
     </header>
 

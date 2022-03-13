@@ -2,7 +2,7 @@
 
 // Lier la feuille de style et les fonts au projet
 
-function simplenews_enqueue_styles(){
+function immo_enqueue_styles(){
 
     wp_enqueue_style( 'latofont', 'https://fonts.googleapis.com/css2?family=Lato&display=swap' );
 
@@ -12,12 +12,12 @@ function simplenews_enqueue_styles(){
 
 }
 
-add_action( 'wp_enqueue_scripts', 'simplenews_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'immo_enqueue_styles' );
 
 
 // Supports de thème
 
-function simplenews_add_theme_support(){
+function immo_add_theme_support(){
 
     add_theme_support( 'post-thumbnails' );
 
@@ -25,22 +25,22 @@ function simplenews_add_theme_support(){
 
 }
 
-add_action( 'after_setup_theme', 'simplenews_add_theme_support' );
+add_action( 'after_setup_theme', 'immo_add_theme_support' );
 
 
 //declarer les menus
-function simplenews_register_menus(){
+function immo_register_menus(){
     register_nav_menus( array(
         'main-menu' => __('Menu principal')
     ));
 }
 
-add_action( 'after_setup_theme', 'simplenews_register_menus' );
+add_action( 'after_setup_theme', 'immo_register_menus' );
 
 
 //Déclarer les widgets
 
-function simplenews_widgets_init($id){
+function immo_widgets_init($id){
 
     register_sidebar( array(
         'name' => 'Widget 1',
@@ -61,4 +61,4 @@ function simplenews_widgets_init($id){
 
 }
 
-add_action( 'widgets_init', 'simplenews_widgets_init' );
+add_action( 'widgets_init', 'immo_widgets_init' );

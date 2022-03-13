@@ -11,12 +11,6 @@ Template Name: Gabarit accueil
 <?php get_header( ) ?>
 
 <?php  
-
-    // $args = array(
-    //     'category_name' => 'Techno',
-    //     'post_type' => 'post'
-    // );
-
     $args = array(
         'category__not_in' => 1
     );
