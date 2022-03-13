@@ -19,7 +19,7 @@
 
                     <article class="flex">
 
-                        <div class="image-article quart">
+                        <div class="quart">
                            
 
                             <?php if(has_post_thumbnail(  )) : ?>

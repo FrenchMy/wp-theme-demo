@@ -5,7 +5,7 @@
         <?php while(have_posts( )) : the_post( ); ?>
 
             <article class="flex">
-                <div class="image-article quart">
+                <div class="quart">
                 
                 <?php if(has_post_thumbnail(  )) 
                 {
@@ -15,7 +15,7 @@
                 <div class="texte-article trois-quart">
                     <h3><?php the_title(  ); ?></h3>
                     <p><?php the_content(  ); ?></p>
-                    <p>Ce sujet vous interesse? Consultez d'autre articles dans la catégorie <?php the_category(',' ) ?>.</p>
+                    <p>Ce bien vous intéresse ? consulter d'autres biens de ce genre <?php the_category(',' ) ?>.</p>
                 </div>
             </article>
 

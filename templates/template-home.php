@@ -10,52 +10,13 @@ Template Name: Gabarit accueil
 
 <?php get_header( ) ?>
 
-<?php  
-    $args = array(
-        'category__not_in' => 1
-    );
+<img src="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/wd-tp1/wp-content/uploads/2022/03/image-accueil.jpg" alt="" class="fond-accueil">
+<img src="https://tim.cgmatane.qc.ca/etudiants/2020/beaumontr/wd-tp1/wp-content/uploads/2022/03/va.png" alt="" class="va-png">
+        <section class="message-bienvenue">
+            <p>Slogan</p>
 
-    $query = new WP_Query($args);
+            <div class="btn-message">Évaluer gratuitement votre bien</div>
 
-
-?>
-
-<div class="flex">
-            <section class="trois-quart">
-
-            <?php if($query->have_posts(  )) : ?>
-
-                <?php  while($query->have_posts(  )) : $query->the_post(  ); ?>
-
-                    <article class="flex">
-
-                        <div class="image-article quart">
-                           
-
-                            <?php if(has_post_thumbnail(  )) : ?>
-
-                                <?php the_post_thumbnail('small', ['class' => 'fluide'] ); ?>
-
-                            <?php endif ?>
-
-                        </div>
-
-                        <div class="texte-article trois-quart">
-
-                            <h3><?php the_title(  ); ?></h3>
-                            <p><?php the_excerpt(  ); ?> <a href="<?php the_permalink(); ?>">En savoir plus...</a></p>
-
-                        </div>
-                    </article>
-                
-            <?php endwhile; ?>
-
-            <?php endif; ?>
-
-            </section>
-            <section class="quart sidebar">
-                <?php get_sidebar(  ); ?>
-            </section>
-        </div>
+        </section>
 
 <?php get_footer( ) ?>
