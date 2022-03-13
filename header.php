@@ -52,8 +52,8 @@
 
     <div class="conteneur flex align-right">
 
-            <form action="<?php echo esc_url(home_url( '/' ) ) ?>" method="get" class="recherche">
-                <input type="text" name="s" Placeholder="Rechercher">
+            <form action="<?php echo esc_url(home_url( '/' ) ) ?>" method="get" >
+                <input type="text" name="s" Placeholder="Rechercher" class="recherche">
             </form>
 
     </div>
