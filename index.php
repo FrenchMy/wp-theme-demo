@@ -6,8 +6,6 @@
 
         <?php else : ?>
 
-            <h2>Accueil</h2>
-
     <?php endif; ?>
 
 
@@ -47,7 +45,7 @@
             </section>
             <section class="quart sidebar">
                 <article>
-                    <h3>Sidebar</h3>
+                    <?php get_sidebar(  ); ?>
                     <div class="widget-container">
                         <!-- widget -->
                     </div>
